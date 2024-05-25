@@ -23,5 +23,3 @@ RUN echo "Building image ${buildno}" >> /app/build/somefile.txt
 EXPOSE 8081
 ENTRYPOINT ["/app/build/apache-tomcat-9.0.89/bin/catalina.sh"]
 CMD ["run"]
-
-
