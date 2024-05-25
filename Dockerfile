@@ -9,7 +9,6 @@ WORKDIR build
 # / + app + build = /app/build
 RUN touch test2.txt && echo "Hello World" > test3.txt
 
-COPY .idea idea-new
 COPY tomcat.tar.gz /app
 
 RUN wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.89/bin/apache-tomcat-9.0.89.tar.gz && \
